@@ -23,12 +23,12 @@ api_key = os.getenv("PINECONE_API_KEY")
 if not api_key:
     raise ValueError("PINECONE_API_KEY not found in environment variables")
 
-PINECONE_API_ENV = os.getenv("PINECONE_API_ENV", "us-east-1")
+PINECONE_API_ENV = os.getenv("PINECONE_API_ENV", "enter-the-region-name")
 
 # --------------------
 # File and index settings (edit these as needed)
 PDF_FOLDER = "pdf"  # Folder with PDFs
-INDEX_NAME = "hybrid-search-langchain-pinecone"
+INDEX_NAME = "hname_of_your_index"
 EMBEDDING_DIM = 384  # Matches the all-MiniLM-L6-v2 model's output dimension
 
 # --------------------
