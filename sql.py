@@ -18,7 +18,7 @@ if not os.environ.get("GROQ_API_KEY"):
 
 # ✅ Connect to MySQL Database
 try:
-    db = SQLDatabase.from_uri("mysql+pymysql://root:root@localhost/aryandb1")
+    db = SQLDatabase.from_uri("mysql+pymysql://username:password@localhost/database_name")
     print("✅ Connected to:", db.dialect)
     print("📂 Tables:", db.get_usable_table_names())
 except Exception as e:
