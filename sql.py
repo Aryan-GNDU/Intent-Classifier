@@ -43,6 +43,7 @@ class QueryOutput(TypedDict):
     query: Annotated[str, ..., "Syntactically valid SQL query."]
 
 # ✅ Define Table Schemas
+##to decrease the length of the code you can take the schemas part in schemas.py, a separate code file.
 TABLE_SCHEMAS = {
     "music_dataset": """
         Table: music_dataset
