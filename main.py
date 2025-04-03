@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 def classify_intent(query: str) -> str:
     """Classify user intent as either 'sql' or 'vector_db' using Gemini API."""
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GEMINI_API_KEY)
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=GEMINI_API_KEY)
 
     prompt = f"""
     You are an intent classifier. Determine if the query is related to 'SQL' or 'VectorDB'.
